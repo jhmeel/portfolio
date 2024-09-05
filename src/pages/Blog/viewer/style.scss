@@ -1,0 +1,236 @@
+.article-renderer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-family: 'Roboto', sans-serif;
+
+  &__item {
+    max-width: 800px;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__header-img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    max-height: 400px;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &__header {
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 26px;
+    }
+  }
+
+  &__meta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 15px 25px;
+    height: 50px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border-radius: 25px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+
+    &-icon {
+      margin-right: 8px;
+      color: #3498db;
+    }
+  }
+
+  &__posted-at {
+    color: #7f8c8d;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 767px) {
+    &__posted-at,
+    .views-count {
+      font-size: 12px;
+    }
+  }
+
+  &__viewers {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+
+    &-icon {
+      margin-right: 8px;
+      color: #e74c3c;
+    }
+
+    .views-count {
+      font-family: 'Montserrat', sans-serif;
+      color: #34495e;
+      cursor: pointer;
+      font-weight: 600;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #3498db;
+      }
+    }
+  }
+
+  &__audio-btn {
+    background-color: #b6d8ee;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 600;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__audio-icon {
+      color: #fff;
+    }
+  }
+
+  &__content {
+    padding: 25px;
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      font-size: 14px;
+      color: #34495e;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #2980b9;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .article-renderer__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .article-renderer__meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  .article-not-found {
+    text-align: center;
+    font-size: 24px;
+    color: #e74c3c;
+    margin-top: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+}
+
+.code-block {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-left: 3px solid #3498db;
+}
+
+.v-article-tags {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 15px;
+
+  &::-webkit-scrollbar {
+   display: none;
+  }
+
+}
+
+.v-tag-item {
+  min-width: fit-content;
+  height: fit-content;
+  font-size: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
+
+  &:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+}
+
+.art-view-scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  z-index: 999999;
+  transition: width 0.3s ease;
+}

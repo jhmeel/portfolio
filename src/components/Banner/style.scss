@@ -1,0 +1,59 @@
+.banner {
+  margin-top: 70px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  color: grey;
+  animation: fade-in 0.5s ease-in-out;
+
+  @media (min-width: 1024px) {
+    padding: 2.5rem;
+  }
+}
+
+.banner-heading {
+  font-size: 2.453rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: black;
+}
+
+.banner-occupation {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.banner-cta {
+  font-weight: 300;
+  font-size: 1rem;
+
+  @media (min-width: 1024px) {
+    font-size: 1.25rem;
+  }
+}
+
+.banner-link {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  color: grey;
+
+  &:hover {
+    color: rgb(92, 88, 88);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,53 @@
+.custom-header {
+  padding-top: 1.9rem;
+  padding-bottom: 2rem;
+}
+
+.custom-header-title {
+  font-size: 1.675rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: 640px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.custom-header-subtitle {
+  font-size: 13px;
+  line-height: 1.6rem;
+  color: grey;
+}
+
+.custom-h1 {
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.custom-h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.custom-h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}

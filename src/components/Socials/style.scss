@@ -1,0 +1,21 @@
+.social-icons-container {
+  display: flex;
+  width:100%;
+  justify-content:space-around;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.social-icon-link {
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+ 
+}

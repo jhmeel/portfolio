@@ -1,0 +1,29 @@
+.footer {
+  height: fit-content;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 300;
+  color: grey;
+  background-color: #fff;
+
+  @media (min-width: 992px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+
+  @media (min-width: 992px) {
+    margin-top: 2rem;
+  }
+}

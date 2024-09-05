@@ -1,0 +1,22 @@
+
+$stack-list-gap: 0.5rem; // 8px
+$stack-item-padding: 0.25rem 0.5rem; // 4px 8px
+$stack-item-radius: 0.25rem; // 4px
+$stack-item-font-size: 0.75rem; // 12px
+$stack-item-font-weight: 500;
+$stack-item-text-color: #fff;
+
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $stack-list-gap;
+  gap: $stack-list-gap;
+
+  &__item {
+    padding: $stack-item-padding;
+    border-radius: $stack-item-radius;
+    font-size: $stack-item-font-size;
+    font-weight: $stack-item-font-weight;
+    color: $stack-item-text-color;
+  }
+}
