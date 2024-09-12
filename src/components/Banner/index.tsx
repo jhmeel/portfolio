@@ -5,7 +5,7 @@ import { useSpring, animated } from "react-spring";
 import { FaFileDownload } from "react-icons/fa";
 import { Format } from "../../Types";
 import { getRandomColor } from "../../utils";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/Jhmeel_Software_Engineer_CV.pdf";
 import "./style.scss";
 
 function Banner(): React.ReactElement {

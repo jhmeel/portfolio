@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaFileDownload, FaBars, FaTimes } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { useSpring, animated } from "react-spring";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/Jhmeel_Software_Engineer_CV.pdf";
 import "./Header.scss";
 import { contact } from "../../Types";
 import NavBar from "../Nav";
