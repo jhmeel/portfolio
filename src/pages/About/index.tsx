@@ -8,7 +8,7 @@ import "./style.scss";
 import { Header } from "../../components/Form";
 import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/Jhmeel_Software_Engineer_CV.pdf";
 import MetaData from "../../components/MetaData";
 
 const handleCVDownload = () => {
